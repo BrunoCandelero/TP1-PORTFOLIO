@@ -13,7 +13,6 @@ body {
     transition: background 0.3s, color 0.3s;
 }
 
-/* Estructura y layout */
 /* Contenedor principal que envuelve el contenido de cada página */
 .container {
     display: grid;
@@ -24,11 +23,14 @@ body {
     padding: 20px;
 }
 
-/* Media query para pantallas de Tablet y PC (768px o más) */
-@media (min-width: 768px) {
-    .container {
-        grid-template-columns: 1fr; 
-    }
+/* Contenedor de las redes */
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    list-style: none; 
+    padding: 0;
+    margin: 25px 0;
 }
 
 /* Header y navegacion */
@@ -99,3 +101,46 @@ img[alt="Foto de perfil"] {
     margin-bottom: 15px;
 }
 
+/* Formulario y botones */
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #27374d;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+button {
+    background-color: #27374d;
+    color: #edf2f7;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    margin-top: 15px;
+    transition: transform 0.2s;
+}
+
+/*al pasar por arriba cambie el color*/
+button:hover {
+    transform: scale(1.05);
+    background-color: #526d82;
+}
+
+/* FOOTER - pie de pagina */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #27374d;
+    color: #edf2f7;
+    font-size: 0.9rem;
+}

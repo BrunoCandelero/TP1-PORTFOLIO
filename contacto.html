@@ -21,7 +21,7 @@
 
     <main class="container">
         <section>
-            <h2>Información de Contacto</h2>
+            <h2>INFORMACION DE CONTACTO</h2>
             <p>Email: zyonnexus@gmail.com</p>
             <p>Teléfono: 3564-123456</p>
             <p>LinkedIn: <a href="https://www.linkedin.com/in/zyonnexus" target="_blank">linkedin.com/in/zyonnexus</a></p>
@@ -35,17 +35,20 @@
             </ul>
 
             <h2>Formulario de Contacto</h2>
-            <form action="mailto:zyonnexus@gmail.com" method="POST" enctype="text/plain">
-                <label for="name">NOMBRE:</label><br>
-                <input type="text" id="name" name="name" placeholder="Tu nombre" required><br><br>
+            <form action="https://formspree.io/f/xnjozyke" method="POST">
+    
+            <label for="name">NOMBRE:</label><br>
+            <input type="text" id="name" name="name" placeholder="Tu nombre" required><br><br>
 
-                <label for="email">EMAIL:</label><br>
-                <input type="email" id="email" name="email" placeholder="Tu email" required><br><br>
+            <label for="email">EMAIL:</label><br>
+            <input type="email" id="email" name="email" placeholder="Tu email" required><br><br>
 
-                <label for="message">MENSAJE:</label><br>
-                <textarea id="message" name="message" placeholder="Escribe tu mensaje" required></textarea><br><br>
+            <label for="message">MENSAJE:</label><br>
+            <textarea id="message" name="message" placeholder="Escribe tu mensaje" required></textarea><br><br>
 
-                <button type="submit">ENVIAR</button>
+            <input type="hidden" name="_subject" value="Nuevo mensaje desde mi Portfolio">
+
+            <button type="submit">ENVIAR</button>
             </form>
         </section>
     </main>
